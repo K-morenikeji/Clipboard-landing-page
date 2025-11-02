@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+*{
+   text-decoration: none; 
+   box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+header{
+    padding: 30px 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(images/bg-header-desktop.png);
+    background-size: cover;
+}
+.intro{
+    text-align: center;
+    padding: 10px 0;
+    width: 40%;
+}
+.intro h2{
+    padding: 15px 0;
+}
+.action-button button{
+    padding: 15px 35px;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border: none;
+    margin: 0 10px;
+    border-radius: 20px;
+}
+.action-button button.ios{
+    background-color: hsl(171, 66%, 44%);
+    box-shadow: 4px hsl(171, 66%, 44%);
+}
+.action-button button.Mac{
+    background-color: hsl(233, 100%, 69%);
+    box-shadow: 4px hsl(233, 100%, 69%);
+}
+.one{
+    text-align: center;
+    width: 45%;
+    margin: auto;
+}
+.one h3{
+    padding: 15px 0;
+}
+.two {
+    display: grid;
+    grid-template-columns:repeat(2,1fr) ;
+    margin: 50px 0;
+}
+.two img{
+    height: 100%;
+    width: 80%;
+}
+.two .side div{
+    margin-top: 20px;
+    width: 65%;
+}
+.three{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.three img {
+    height: 100%;
+    width: 80%;
+}
+.three div:first-child {
+    padding: 70px 0;
+    width: 65%;
+    margin: auto;
+}
+.four .functions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.four .functions div {
+    width: 25%;
+    margin: 0 30px;
+}
+.four .functions div .img-four {
+    margin: 10px 0 10px 0;
+}
+.four .partners-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px;
+    margin: 50px ;
+}
+.five{
+    text-align: center;
+    width: 45%;
+    margin: auto;
+    padding-bottom: 90px;
+}
+footer{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    align-items: center;
+    background-color: hsl(201, 11%, 66%);
+    padding-top: 20px;
+}
+.foot .logo {
+    width: 50px;
+    height: 50px;
+    margin: 0 70px;
+}
+.foot .navigation{
+    list-style: none;
+    max-width: 400px;
+}
+.navigation li {
+    display: inline-block;
+    margin: 5px 20px;
+}
+a {
+    color: hsl(210, 10%, 33%);
+}
+footer p{
+    display: flex;
+    align-items: center;
+}
+@media screen and (max-width: 765px) {
+  header{
+     background: url(images/bg-header-mobile.png);
+     background-size: cover;
+     padding: 40px 10px;
+  }  
+  .intro{
+    width: 100%;
+  }
+  .one{
+    width: 80%;
+  }
+  .two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .two .side div{
+    width: 65%;
+    margin-left: 80px;
+    text-align: center;
+  }
+  .side{
+    align-items: center;
+    justify-content: center;
+  }
+  .three div:first-child{
+    width: 75%;
+  }
+  .four .functions {
+    display: grid;
+  }
+  .four .functions div {
+    width: 85%;
+  }
+  .four .partners-logo{
+    display: grid;
+    grid-gap: 4em;
+    justify-content: center;
+    align-items: center;
+  }
+  .five {
+    width: 85%;
+  }
+  .action-button button{
+    margin: 10px 0;
+  }
+  footer{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+    margin: 0;
+  }
+  footer .foot{
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+    margin: 50px;
+  }
+  .navigation li{
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+  .socials {
+    display: block;
+    margin: auto;
+  }
+}
