@@ -129,8 +129,12 @@ a {
     color: hsl(210, 10%, 33%);
 }
 footer p{
-    display: flex;
     align-items: center;
+}
+.socials{
+  display: inline-flex;
+  justify-content: space-around;
+  padding: 50px;
 }
 @media screen and (max-width: 765px) {
   header{
@@ -138,6 +142,9 @@ footer p{
      background-size: cover;
      padding: 40px 10px;
   }  
+  header button{
+    display: block;
+  }
   .intro{
     width: 100%;
   }
@@ -153,7 +160,7 @@ footer p{
   .two .side div{
     width: 65%;
     margin-left: 80px;
-    text-align: center;
+    text-align: center;s
   }
   .side{
     align-items: center;
@@ -176,33 +183,39 @@ footer p{
   }
   .five {
     width: 85%;
+    align-items: center;
   }
   .action-button button{
     margin: 10px 0;
   }
   footer{
     display: block;
+    justify-items: center;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 20px 0;
-    margin: 0;
   }
   footer .foot{
     align-items: center;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     padding: 20px 0;
     margin: 50px;
   }
-  .navigation li{
-    display: grid;
-    align-items: center;
-    text-align: center;
-}
-  .socials {
+  .navigation li, a{
     display: block;
-    margin: auto;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+  .socials{
+    display: flex;
+    padding: 10px 0;
+    margin-bottom: 25px;
+  }
+  .socials  a{
+    padding: 8px;
+  }
+  footer p{
+    text-align: center;
   }
 }
