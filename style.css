@@ -106,11 +106,17 @@ header{
     padding-bottom: 90px;
 }
 footer{
-    display: grid;
-    grid-template-columns: 20% 60% 20%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     background-color: hsl(201, 11%, 66%);
     padding-top: 20px;
+}
+.foot-main{
+  display: grid;
+  grid-template-columns: 17% 70% 17%;
+  align-items: center;
+  padding: 20px;
 }
 .foot .logo {
     width: 50px;
@@ -128,13 +134,13 @@ footer{
 a {
     color: hsl(210, 10%, 33%);
 }
-footer p{
-    align-items: center;
-}
-.socials{
+.socials {
   display: inline-flex;
   justify-content: space-around;
   padding: 50px;
+}
+.soc{
+  padding: 4px;
 }
 @media screen and (max-width: 765px) {
   header{
@@ -157,14 +163,11 @@ footer p{
     align-items: center;
     flex-direction: column;
   }
-  .two .side div{
-    width: 65%;
-    margin-left: 80px;
+  .two .side {
+    width: 90%;
+    margin-left: 65%;
+    margin-right: 33%;
     text-align: center;
-  }
-  .side{
-    align-items: center;
-    justify-content: center;
   }
   .three div:first-child{
     width: 75%;
@@ -188,34 +191,36 @@ footer p{
   .action-button button{
     margin: 10px 0;
   }
-  footer{
-    display: block;
+  footer .foot-main{
+    display: flex;
+    flex-direction: column;
     justify-items: center;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
   }
   footer .foot{
     align-items: center;
-    padding: 20px 0;
-    margin: 50px;
+    padding: 10px 0;
+    margin: 10px;
   }
-  .navigation li, a{
-    display: block;
+  .navigation li, .nav{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    justify-items: center;
     align-items: center;
+    margin-right: 30px;
   }
   .socials{
     display: flex;
     padding: 10px 0;
     margin-bottom: 10px;
   }
-  .socials  a{
+  .socials  .soc{
     padding: 4px;
   }
   footer p{
     text-align: center;
+    margin-right: 20px 20px;
+    padding: 4px;
   }
 }
